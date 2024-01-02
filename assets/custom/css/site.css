@@ -1,0 +1,58 @@
+/*
++----------------------------------[ site.css ]---------------------------------+
+|     This CSS file is part of our project which contains some basic styling    |
++-------------------------------------------------------------------------------+
+|                Author : Prashant Bhandari & Prayash Bhattrai                  |
++-------------------------------------------------------------------------------+
+*/
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(../../font/caviar_dreams/CaviarDreams_Bold.ttf);
+}
+
+body {
+    font-family: CaviarDreams;
+}
+
+/*It makes Login and Register modal appear all the time*/
+#loginModal,
+#registerModal {
+    display: block;
+}
+
+.background {
+    /*background-color:#424264;*/
+    background-color: #506060;
+}
+
+/* .wave-background{
+    background-image: url(background.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+} */
+
+/*--------[Scrollbar]--------*/
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #9d6807;
+}
+/*---------------------------*/

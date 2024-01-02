@@ -1,0 +1,56 @@
+:root {
+  --offcanvas-width: 270px;
+  --topNavbarHeight: 56px;
+}
+body {
+  overflow-y:scroll;
+}
+#home-bg-color{
+  /*background-color:#4a4c4c;*/
+  background-color:#506060;
+}
+#page-bg-color{
+  /*background-color:#4a4c4c;*/
+  background-color:#787878;
+}
+.info-box
+{
+  background-color:#272727;
+}
+.sidebar-nav {
+  width: var(--offcanvas-width);
+}
+.sidebar-link {
+  display: flex;
+  align-items: center;
+}
+.sidebar-link .right-icon {
+  display: inline-flex;
+}
+.sidebar-link[aria-expanded="true"] .right-icon {
+  transform: rotate(180deg);
+}
+#outvehicle-icon {
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+@media (min-width: 992px) {
+  main {
+    margin-left: var(--offcanvas-width);
+  }
+  /* this is to remove the backdrop */
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+  .sidebar-nav {
+    -webkit-transform: none;
+    transform: none;
+    visibility: visible !important;
+    height: calc(100% - var(--topNavbarHeight));
+    top: var(--topNavbarHeight);
+  }
+}
